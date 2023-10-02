@@ -1,0 +1,16 @@
+'Calling the packages for the dates
+from datetime import date, datetime 
+from datetime import date, timedelta
+
+#defining an initial empty list
+dates_list = []
+
+#defining how big is going to be the list
+n = int(input("Enter the list size: "))
+
+#iteration to enter the dates
+for i in range(0,n):
+	print("Date number: ", i+1,)
+	first_date = date(int(input('Enter year: ')), int(input('Enter month: ')), int(input('Enter day: ')))
+	dates_list.append(first_date.isoformat())
+print("The User's list is: ", dates_list)
